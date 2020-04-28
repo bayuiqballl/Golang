@@ -2,6 +2,13 @@ package main
 
 import "fmt"
 
+/* program fizzbuzz
+jika habis dibagi 3 Fizz,
+jika habis dibagi 5 Buzz
+jika habis dibagi 15 FizzBuzz
+
+
+*/
 func main() {
 
 	for i := 1; i <= 100; i++ {
