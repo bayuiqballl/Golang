@@ -8,7 +8,7 @@ import (
 func main() {
 	sekarang := time.Now()
 
-	fmt.Println("Hari ini : ", sekarang.Format("2020, April 27"))
+	fmt.Println("Hari ini : ", sekarang.Format("2020, April  28"))
 
 	panjang := time.Date(2020, time.March, 1, 0, 0, 0, 0, time.UTC)
 
