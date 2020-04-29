@@ -6,15 +6,12 @@ import (
 )
 
 func main() {
-	sekarang := time.Now()
+	january := time.Date(2020, time.January, 3, 0, 0, 0, 0, time.UTC)
+	february := time.Date(2020, time.February, 10, 0, 0, 0, 0, time.UTC)
 
-	fmt.Println("Hari ini : ", sekarang.Format("2020, April  28"))
+	different := january.Sub(february)
 
-	panjang := time.Date(2020, time.March, 1, 0, 0, 0, 0, time.UTC)
+	days := int(different.Hours() / 24)
 
-	perbedaan := sekarang.Sub(panjang)
-
-	hari := int(perbedaan.Hours() / 24)
-
-	fmt.Printf("%d\n", hari)
+	fmt.Printf("Dari tanggal 3 January 2020 sampai 10 February 2020 sudah %d hari yang terlewati \n", days)
 }
