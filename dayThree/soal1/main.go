@@ -9,15 +9,29 @@ type Produk struct {
 }
 
 func main() {
-	minimarket := make(map[int]Produk)
-	minimarket[1] = Produk{nama: "Roti Tawar", harga: 13000, stok: 15}
-	minimarket[2] = Produk{nama: "Sabun", harga: 1300, stok: 14}
-	minimarket[3] = Produk{nama: "Aqua", harga: 1000, stok: 10}
-	minimarket[4] = Produk{nama: "Kurma", harga: 3000, stok: 10}
+	nama := make(map[int]string)
+	nama[0] = ("Roti Tawar")
+	nama[1] = ("Sabun")
+	nama[2] = ("Aqua")
+	nama[3] = ("Kurma")
 
-	for _, item := range minimarket {
-		if item.stok <= 10 {
-			fmt.Println("Nama Barang: ", item.nama, "\nHarga Barang: Rp.", item.harga, "\nStok Barang: ", item.stok)
+	harga := make(map[int]int)
+	harga[0] = (13000)
+	harga[1] = (3000)
+	harga[2] = (5000)
+	harga[3] = (50000)
+
+	stok := make(map[int]int)
+	stok[0] = (5)
+	stok[1] = (4)
+	stok[2] = (10)
+	stok[3] = (10)
+
+	for i, item := range stok {
+		if item < 10 {
+			fmt.Println("Nama Barang : ", nama[i])
+			fmt.Println("Harga  :", harga[i])
+			fmt.Println("Stok  :", stok[i])
 		}
 	}
 
