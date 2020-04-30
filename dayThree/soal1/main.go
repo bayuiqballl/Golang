@@ -2,12 +2,6 @@ package main
 
 import "fmt"
 
-type Produk struct {
-	nama  string
-	harga int
-	stok  int
-}
-
 func main() {
 	nama := make(map[int]string)
 	nama[0] = ("Roti Tawar")
